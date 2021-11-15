@@ -1,0 +1,21 @@
+@import '/src/styles/global.scss';
+
+.neIconButton {
+  @include base;
+  @include shape;
+  @include font-style;
+  @include shadow;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 56px;
+  height: 56px;
+
+  &:hover {
+    @include hover-shadow
+  }
+
+  &:active {
+    @include active-shadow
+  }
+}

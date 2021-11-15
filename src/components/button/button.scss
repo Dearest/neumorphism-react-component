@@ -1,0 +1,35 @@
+@import '/src/styles/global.scss';
+
+.neButton {
+  position: relative;
+  button {
+    @include base;
+    @include shape;
+    @include font-style;
+    @include shadow;
+    height: auto;
+    width: auto;
+  }
+
+  .startIcon {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    width: 19px;
+    height: 19px;
+    @include font-style;
+    pointer-events: none;
+  }
+
+  .big {
+    padding: 18px 50px 18px 50px;
+  }
+
+  :hover {
+    @include hover-shadow;
+  }
+
+  :active {
+    @include active-shadow;
+  }
+}
