@@ -2,7 +2,8 @@ import './App.scss';
 import Button from '../button';
 import Input from '../input';
 import IconButton from '../icon-button'
-import { FaShare , FaClone, FaHeadphonesAlt, FaVolumeMute, FaVolumeUp} from 'react-icons/fa'
+import { FaShare , FaClone, FaHeadphonesAlt, FaVolumeMute, FaVolumeUp, FaPlus, FaRegStar,
+  FaUserPlus, FaTrashAlt} from 'react-icons/fa'
 
 function App() {
 
@@ -29,8 +30,12 @@ function App() {
 
         <div className="displayArea">
           <IconButton icon={<FaHeadphonesAlt/>} onClick={ handleClick }></IconButton>
-          <IconButton icon={<FaVolumeMute/>} onClick={ handleClick }></IconButton>
-          <IconButton icon={<FaVolumeUp/>} onClick={ handleClick }></IconButton>
+          <IconButton icon={<FaUserPlus/>} onClick={ handleClick }></IconButton>
+          <IconButton icon={<FaVolumeMute/>} onClick={ handleClick } size="small"></IconButton>
+          <IconButton icon={<FaVolumeUp/>} onClick={ handleClick } size="small"></IconButton>
+          <IconButton icon={<FaPlus/>} onClick={ handleClick } size="small"></IconButton>
+          <IconButton icon={<FaRegStar/>} onClick={ handleClick } size="small"></IconButton>
+          <IconButton icon={<FaTrashAlt/>} onClick={ handleClick } size="small"></IconButton>
         </div>
 
         <div className="displayArea">

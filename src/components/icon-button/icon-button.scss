@@ -8,8 +8,6 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 56px;
-  height: 56px;
 
   &:hover {
     @include hover-shadow
@@ -17,5 +15,20 @@
 
   &:active {
     @include active-shadow
+  }
+
+  &.big {
+    width: 56px;
+    height: 56px;
+  }
+
+  &.small {
+    width: 40px;
+    height: 40px;
+  }
+
+  .neIconButtonInside {
+    width: 18px;
+    height: 18px;
   }
 }
